@@ -40,8 +40,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Specifications
 | Behavior | Input | Output | Reasoning |
 | ---- | ---- | ---- | ---- |
-| 1. Displays members in team view including full name, affiliation, and team role. | Load page. | See thumbnails of each member. | Requires upload of team member JSON file. |
-| 2. Displays member view. | Click on member. | View name, birthdate, affiliation, team role, email, and cell phone. | Show that all information is correctly accessed and views can change. |
+| 1. Displays members in team view including full name, affiliation, team role, and picture. | Load page. | See thumbnails of each member. | Requires upload of team member JSON file. |
+| 2. Displays member view. | Click on member. | View name, birthdate, affiliation, team role, email, cell phone, and picture. | Show that all information is correctly accessed and views can change. |
 | 3. Displays About page. | Click on About. | Displays basics on team history and mission. | Show another view and allow user to view deeper history. |
 | 4. Admin page allows adding a member. | Click on page and add student information. | Create entry in Firebase database and display on homepage. | Add information to database from application. |
 | 5. Admin page allows updating a member. | Click on page and update student information. | Dynamically change information on page. Change information in database. | Allow app admin to update database entries. |

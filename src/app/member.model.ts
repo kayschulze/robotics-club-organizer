@@ -5,6 +5,7 @@ export class Member {
     public birthdate: Date,
     public affiliation: string,
     public role: string,
+    public status: string,
     public email: string,
     public cellPhone: string,
     public picture: string
