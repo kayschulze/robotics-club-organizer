@@ -12,7 +12,7 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'members-list',
+    path: '',
     component: MembersListComponent
   },
   {

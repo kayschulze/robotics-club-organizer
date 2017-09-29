@@ -1,0 +1,16 @@
+img {
+  height: 100px;
+  width: 90px;
+}
+
+.panel:hover{
+  transform: scale(1.01);
+  background-color: #f8caf9;
+}
+
+.panel{
+  background-color: #fcf87b;
+  border: 2px;
+  border-radius: 30px;
+  margin: 10px;
+}

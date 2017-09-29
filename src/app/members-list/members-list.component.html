@@ -1,3 +1,14 @@
-<p>
-  members-list works!
-</p>
+<div class="card group">
+  <div class="card" class="card-deck" *ngFor="let member of members | async">
+    <div class="card-block panel panel-default" (click)="goToMemberDetails(member)">
+      <h3>{{member.firstName}} {{member.lastName}}</h3>
+      <p class="card-text">From . . . {{member.affiliation}}</p>
+      <p class="card-text">Role: {{member.role}}</p>
+      <img src="{{member.picture}}">
+
+      <p class="card-text">Here</p>
+    </div>
+  </div>
+</div>
+
+<!-- <h3 (click)="goToMemberDetails(member)">{{member.firstName}} {{member.lastName}}</h3> -->
