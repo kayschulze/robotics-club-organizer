@@ -1,0 +1,45 @@
+{ "members": [{
+    "firstName": "Dean",
+    "lastName": "Kaman",
+    "birthdate": "2003-01-01",
+    "affiliation": "Hillsboro High School",
+    "status": "Student",
+    "role": "Design",
+    "email": "dean@firstrocks.com",
+    "cellPhone": "503-642-0001",
+    "picture": "https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/1486_254x191.jpg?"
+  },
+  {
+    "firstName": "Woodie",
+    "lastName": "Flowers",
+    "birthdate": "1978-02-02",
+    "affiliation": "Massachusetts Institute of Technology",
+    "status": "Mentor",
+    "role": "Marketing",
+    "email": "woodie@flowerchild.org",
+    "cellPhone": "206-631-3574",
+    "picture": "http://tech.mit.edu/V131/N18/graphics/thumb-lg-woodieflowers.jpg"
+  },
+  {
+    "firstName": "Adam",
+    "lastName": "Savage",
+    "birthdate": "1990-03-03",
+    "affiliation": "Mythbusters Incorporated",
+    "status": "Alum",
+    "role": "Drive Team",
+    "email": "adams@legendsandmyths.com",
+    "cellPhone": "451-777-8445",
+    "picture": "http://www4.pictures.zimbio.com/gi/Adam+Savage+Paley+Center+Media+Presents+Evening+oelRV3ZkDFxl.jpg"
+  },
+  {
+    "firstName": "Benjamin",
+    "lastName": "Sisko",
+    "birthdate": "2001-04-04",
+    "affiliation": "United Federation of Planets",
+    "status": "Student",
+    "role": "Chairmans",
+    "email": "benjisisk@ds9.baj",
+    "cellPhone": "999-555-0000",
+    "picture": "http://images2.fanpop.com/image/photos/13600000/Benjamin-Sisko-benjamin-sisko-13605659-692-530.jpg"
+  }]
+}
