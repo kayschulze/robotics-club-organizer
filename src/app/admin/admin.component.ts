@@ -27,7 +27,7 @@ export class AdminComponent implements OnInit {
       'email': email,
       'cellPhone': cellPhone,
       'picture': picture
-    };
+    }
 
     this.memberService.addMember(newMember);
   }
