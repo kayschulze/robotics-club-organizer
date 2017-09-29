@@ -2,7 +2,7 @@ export class Member {
   constructor (
     public firstName: string,
     public lastName: string,
-    public birthdate: Date,
+    public birthdate: string,
     public affiliation: string,
     public role: string,
     public status: string,
