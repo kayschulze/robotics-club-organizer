@@ -1,0 +1,72 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Member to Team</h3>
+  </div>
+
+  <div class="panel-body">
+    <div>
+      <label>First Name:</label>
+      <input [(ngModel)]="selectedMember.firstName">
+    </div>
+
+    <div>
+      <label>Last Name:</label>
+      <input [(ngModel)]="selectedMember.lastName">
+    </div>
+
+    <div>
+      <label>Birthdate:</label>
+      <input [(ngModel)]="selectedMember.birthdate">
+      <!-- <input class="form-control" type="date" #birthdate> -->
+    </div>
+
+    <div>
+      <label>Affiliation:</label>
+      <input [(ngModel)]="selectedMember.affiliation">
+    </div>
+
+    <div>
+      <label>Role: </label>
+      <select [(ngModel)]="selectedMember.role">
+        <option value="Chairman">Chairman's Award</option>
+        <option value="Design">Design Team</option>
+        <option value="Drive">Drive Team</option>
+        <option value="Electrical">Electrical Team</option>
+        <option value="Fundraising">Fundraising Team</option>
+        <option value="Hospitality">Hospitality Team</option>
+        <option value="Marketing">Marketing Team</option>
+        <option value="Programming">Programming Team</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Status</label>
+      <select [(ngModel)]="selectedMember.status">
+        <option value="Student">Student</option>
+        <option value="Mentor">Mentor</option>
+        <option value="Alum">Alum</option>
+        <option value="Parent">Parent</option>
+      </select>
+    </div>
+
+    <div>
+      <label>email</label>
+      <input [(ngModel)]="selectedMember.email">
+    </div>
+
+    <div>
+      <label>Cell Phone</label>
+      <input [(ngModel)]="selectedMember.cellPhone">
+    </div>
+
+    <div>
+      <label>Picture (paste URL)</label>
+      <input [(ngModel)]="selectedMember.picture">
+    </div>
+
+    <button (click)="beginUpdatingMember(selectedMember)">Update Member</button>
+
+    <button (click)="beginDeletingMember(selectedMember)">Delete Member</button>
+
+  </div>
+</div>

@@ -11,24 +11,12 @@ import { Router } from '@angular/router';
 
 export class AdminComponent implements OnInit {
 
-  constructor(private memberService: MemberService) { }
+  constructor(private router: Router, private memberService: MemberService) { }
 
   ngOnInit() {
   }
 
-  submitForm(firstName: string, lastName: string, birthdate: string, affiliation: string, role: string, status: string, email: string, cellPhone: string, picture: string) {
-    let newMember = {
-      'firstName': firstName,
-      'lastName': lastName,
-      'birthdate': birthdate,
-      'affiliation': affiliation,
-      'role': role,
-      'status': status,
-      'email': email,
-      'cellPhone': cellPhone,
-      'picture': picture
-    }
-
-    this.memberService.addMember(newMember);
+  goToAddMemberPage() {
+    this.router.navigate(['add-member']);
   }
 }

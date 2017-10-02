@@ -23,4 +23,25 @@ export class MemberService {
     return this.memberList.push(memberToAdd);
   }
 
+  updateMember(localUpdatedMember) {
+    let memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+    memberEntryInFirebase.update({
+      firstName: localUpdatedMember.firstName,
+      lastName: localUpdatedMember.lastName,
+      birthdate: localUpdatedMember.birthdate,
+      affiliation: localUpdatedMember.affiliation,
+      role: localUpdatedMember.role,
+      status: localUpdatedMember.status,
+      email: localUpdatedMember.email,
+      cellPhone: localUpdatedMember.cellPhone,
+      picture: localUpdatedMember.picture
+    });
+
+  }
+
+  deleteMember(localMemberToDelete) {
+    let memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
+
 }

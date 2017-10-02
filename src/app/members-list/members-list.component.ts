@@ -23,4 +23,8 @@ export class MembersListComponent implements OnInit {
     this.router.navigate(['members', clickedMember.$key]);
   }
 
+  goToEditMemberPage(memberToEdit) {
+    this.router.navigate(['edit-member', memberToEdit]);
+  }
+
 }
