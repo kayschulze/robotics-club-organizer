@@ -5,12 +5,12 @@
       <p class="card-text">From . . . {{member.affiliation}}</p>
       <p class="card-text">Role: {{member.role}}</p>
       <img src="{{member.picture}}">
-
-      <!-- <div *ngIf="currentRoute === '/admin'"> -->
-        <button (click)="goToEditMemberPage(member)">Edit Member</button>
-        <!-- <app-edit-member [selectedMember]="member"></app-edit-member> -->
-      <!-- </div> -->
-
     </div>
+
+    <div *ngIf="currentRoute === '/admin'">
+      <!-- <button (click)="goToEditMemberPage(member)">Edit Member</button> -->
+      <app-edit-member [selectedMember]="member"></app-edit-member>
+    </div>
+
   </div>
 </div>
